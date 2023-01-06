@@ -1,6 +1,8 @@
 package projeto.loginSpringBoot.service.impl;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 import projeto.loginSpringBoot.dtos.UserDto;
 import projeto.loginSpringBoot.entity.Role;
 import projeto.loginSpringBoot.entity.User;
@@ -11,8 +13,7 @@ import projeto.loginSpringBoot.service.UserService;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-
-
+@Service
 public class UserServiceImpl implements UserService {
 
     private UserRepository userRepository;
